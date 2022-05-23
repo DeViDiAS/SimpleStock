@@ -1,0 +1,72 @@
+	<!DOCTYPE html>
+	<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SimpleStock</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+		<script src="script1.js"></script>
+	</head>
+	<body>
+
+		<header>
+			<h1>SimpleStock</h1>
+		</header>
+
+			<main>
+
+				<div class="title">
+					<h2>Controle de Estoque</h2>
+					<span>ESTOQUE</span>
+				</div>
+
+				<div class="card">
+					<div class="lineInput">
+							<label>Data de Lançamento</label>
+							<input type="date" id="data">
+					</div>
+					
+					<div class="lineInput">
+						<label>Tipo de Movimentação</label>
+						<input type="text" id="tipo" placeholder="Entrada / Saída">
+						
+				</div>
+
+				<div class="lineInput">
+					<label>Produto</label>
+					<input type="text" id="produto" placeholder="Informe o nome do Produto">	
+			</div>
+
+			<div class="lineInput">
+				<label>Quantidade</label>
+				<input type="number" id="quantidade" placeholder="Informe a Quantidade">
+			</div>
+
+					<button onclick="produto.lançar()" id = 'btn1'>Lançar</button>
+					<button onclick="produto.cancelar()">Cancelar</button>
+				</div>
+
+				<div class="content">
+					<table border="1">
+						<thead>
+							<th class="center">ID</th>
+							<th>Data</th>
+							<th>Tipo</th>
+							<th>Produto</th>
+							<th>Quantidade</th>
+							<th class="center">Ações</th>
+						</thead>
+						<tbody id="tbody">
+							
+						</tbody>
+					</table>
+				</div>
+				
+			</main>
+					
+	</body>
+	</html>
